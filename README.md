@@ -10,3 +10,6 @@
 
 ## Descripción del Proyecto
 Una aplicación web hecha con React para explorar la discografía completa de Taylor Swift, ordenarla cronológicamente, filtrar por álbum y ver los detalles y la letra de cada canción.
+
+### API utilizada
+https://github.com/sarbor/taylor_swift_api
