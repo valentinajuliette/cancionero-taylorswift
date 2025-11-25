@@ -1,0 +1,249 @@
+/* ------------------------------------------------------------
+    🎨 PALETA PASTEL SWIFTIE
+------------------------------------------------------------ */
+:root {
+    --pastel-bg: #f8f4ff;
+    --pastel-card: #ffffff;
+    --pastel-accent: #d9e8ff;
+    --pastel-accent-2: #ffe8f0;
+    --pastel-text: #3d3d3d;
+    --pastel-purple: #f6e9ff;
+    --pastel-blue: #e1f0ff;
+    --pastel-pink: #ffe7f4;
+}
+
+/* Bootstrap */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* Reset suave */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: var(--pastel-text);
+    background: radial-gradient(circle at top left, var(--pastel-pink), var(--pastel-blue)) fixed;
+}
+
+/* ------------------------------------------------------------
+    🧱 LAYOUT GENERAL
+------------------------------------------------------------ */
+.app-shell {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-main {
+    flex: 1;
+    padding: 2.5rem 1.25rem 3rem;
+}
+
+.page-container {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+/* ------------------------------------------------------------
+    🌈 NAVBAR ESTILO SANQUINTA
+------------------------------------------------------------ */
+.ts-navbar {
+    background: linear-gradient(90deg, #ffe0f0, #e8e3ff, #dff4ff);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.ts-navbar-inner {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ts-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+}
+
+.ts-brand-icon {
+    font-size: 1.3rem;
+}
+
+.ts-brand-text {
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: #4a3c74;
+}
+
+.ts-nav-links {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.ts-nav-link {
+    padding: 0.35rem 0.9rem;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #5a3e92;
+    background: transparent;
+}
+
+.ts-nav-link:hover {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.ts-nav-link.active {
+    background: #ffffff;
+    color: #3d3d3d;
+    box-shadow: 0 6px 14px rgba(90, 62, 146, 0.12);
+}
+
+/* ------------------------------------------------------------
+    🧁 CARDS PRINCIPALES
+------------------------------------------------------------ */
+.home-card,
+.implementacion-card {
+    background: var(--pastel-card);
+    border-radius: 28px;
+    padding: 2.5rem 2.25rem;
+    margin-top: 1.5rem;
+}
+
+.home-eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.8rem;
+    color: #7e6bb5;
+    margin-bottom: 0.3rem;
+}
+
+/* Imagen en Home */
+.home-image-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.home-image {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 24px;
+    box-shadow: 0 18px 45px rgba(50, 37, 89, 0.12);
+    object-fit: cover;
+}
+
+
+h1, h2, h3, h4 {
+    color: #5a3e92;
+}
+
+/* sombra suave reutilizable */
+.shadow-soft {
+    box-shadow:
+    0 18px 45px rgba(50, 37, 89, 0.12),
+    0 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+/* ------------------------------------------------------------
+    🎛 BOTONES
+------------------------------------------------------------ */
+.ts-btn-primary {
+    background: linear-gradient(120deg, #ffd1ec, #d7e2ff);
+    border: none;
+    color: #3d3d3d;
+    font-weight: 600;
+    border-radius: 999px;
+    padding-inline: 1.4rem;
+}
+
+.ts-btn-primary:hover {
+    filter: brightness(0.96);
+    transform: translateY(-1px);
+}
+
+/* botón recargar PrimeReact */
+.ts-btn-reload {
+    border-color: #c7bafd !important;
+    color: #5a3e92 !important;
+    border-radius: 999px !important;
+}
+
+.ts-btn-reload:hover {
+    background: #f0e9ff !important;
+}
+
+/* ------------------------------------------------------------
+    📊 PRIME REACT DATATABLE PASTEL
+------------------------------------------------------------ */
+.ts-datatable .p-datatable-header {
+    background: #f6f2ff !important;
+    border-radius: 16px 16px 0 0;
+    border: none !important;
+}
+
+.ts-datatable .p-datatable-thead > tr > th {
+    background: #f9f7ff !important;
+    color: #5a3e92 !important;
+    border: none !important;
+    font-weight: 600;
+}
+
+.ts-datatable .p-datatable-tbody > tr {
+    border: none !important;
+}
+
+.ts-datatable .p-datatable-tbody > tr:hover {
+    background: #f7f1ff !important;
+}
+
+.ts-datatable .p-datatable-tbody > tr.p-highlight {
+    background: #eadbff !important;
+}
+
+/* paginación */
+.ts-datatable .p-paginator {
+    border-radius: 0 0 16px 16px;
+    border: none !important;
+    background: #faf8ff !important;
+}
+
+/* ------------------------------------------------------------
+    🎤 DIALOGO LETRAS
+------------------------------------------------------------ */
+.ts-dialog .p-dialog-header {
+    background: #f6f0ff !important;
+    color: #5a3e92 !important;
+}
+
+.ts-dialog .p-dialog-content {
+    background: #ffffff !important;
+    color: var(--pastel-text);
+}
+
+.lyrics-box {
+    background: #f9f4ff;
+    border-radius: 16px;
+    padding: 1rem;
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ecdfff;
+}
+
+.lyrics-pre {
+    margin: 0;
+    white-space: pre-wrap;
+    font-size: 0.95rem;
+}
+
+/* ------------------------------------------------------------
+    🌈 TRANSICIONES GENERALES
+------------------------------------------------------------ */
+a, button {
+    transition: all 0.15s ease;
+}
